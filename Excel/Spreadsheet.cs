@@ -21,23 +21,19 @@
 
 namespace Excel;
 
-using GemBox.Spreadsheet;
-using System.Xml.Linq;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 /// <summary>
 /// A spreadsheet.
 /// </summary>
 public class Spreadsheet
 {
-    private readonly ExcelFile excelFile;
-    private ExcelWorksheet worksheet;
+    private readonly GemBox.Spreadsheet.ExcelFile excelFile;
+    private GemBox.Spreadsheet.ExcelWorksheet worksheet;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Spreadsheet"/> class.
     /// </summary>
     /// <param name="excelFile">The underlying library's spreadsheet.</param>
-    internal Spreadsheet(ExcelFile excelFile)
+    internal Spreadsheet(GemBox.Spreadsheet.ExcelFile excelFile)
     {
         this.excelFile = excelFile;
         this.worksheet = excelFile.Worksheets[0];
