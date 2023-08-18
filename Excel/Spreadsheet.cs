@@ -56,7 +56,7 @@ public class Spreadsheet
     /// <summary>
     /// Sets the active worksheet.
     /// </summary>
-    /// <param name="sheetIndex">The 0-based index of the spreadsheet.</param>
+    /// <param name="sheetIndex">The zero-based index of the spreadsheet.</param>
     public void SetActiveWorksheet(int sheetIndex)
     {
         this.worksheet = this.excelFile.Worksheets[sheetIndex];
